@@ -27,7 +27,7 @@ svg {
 
   display: grid;
   grid-template-columns: minmax(auto, 140px) auto minmax(auto, 140px);
-  grid-template-rows: 168px 400px auto 64px;
+  grid-template-rows: 165px 400px auto 64px;
 }
 
 /* header */
@@ -36,7 +36,7 @@ header {
   grid-column: 2 / span 1;
 
   display: flex;
-  padding: 28px 0 56px;
+  padding: 28px 0 53px;
   z-index: 100;
   text-transform: uppercase;
 }
@@ -69,6 +69,7 @@ header {
   font-size: 41px;
   font-style: italic;
   margin-top: 17px;
+  margin-right: 30px;
 }
 
 /* nav */
@@ -172,10 +173,65 @@ main {
   grid-template-columns: minmax(auto, 140px) auto minmax(auto, 140px);
   grid-template-rows: repeat(4, auto);
 }
+
+/* slider */
 .slider {
   grid-row: 1 / span 1;
   grid-column: 1 / span 3;
   height: 400px;
+
+  display: grid;
+  grid-template-columns: minmax(auto, 150px) minmax(auto, 557px) auto minmax(auto, 150px);
+  grid-template-rows: 328px;
+
+  align-items: center;
+}
+.slider-video {
+  position: relative;
+  right: 4px;
+  top: 5px;
+  width: 100%;
+}
+.slider-description {
+  text-align: center;
+  font-size: 63px;
+  font-family: "Asap", arial, sans-serif;
+  text-transform: uppercase;
+  padding: 0px 0px 25px 28px;
+  line-height: 1.2;
+}
+
+.slider-description > p:nth-child(1) {
+  text-align: center;
+  color: #dcb105;
+  letter-spacing: 0.7px;
+  margin-right: 7px;
+}
+.slider-description > p:nth-child(2) {
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.7px;
+  margin-left: 7px;
+}
+
+.btn-slider-left,
+.btn-slider-right {
+  height: 57px;
+  width: 32px;
+  background: var(--color-yellow);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.btn-slider-right {
+  margin-left: auto;
+}
+.arrow-l,
+.arrow-r {
+  height: 19px;
+  width: 13px;
+  fill: #fff;
 }
 .icons-bar {
   grid-row: 2 / span 1;
