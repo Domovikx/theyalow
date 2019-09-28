@@ -236,6 +236,12 @@ main {
   justify-items: center;
 }
 
+.btn-slider-left:hover,
+.btn-slider-right:hover {
+  background: khaki;
+  width: 57px;
+}
+
 .btn-slider-right {
   margin-left: auto;
 }
