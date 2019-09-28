@@ -10,6 +10,11 @@
 }
 
 @font-face {
+  font-family: 'Open Sans';
+  src: url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+}
+
+@font-face {
   font-family: "SegoeWP";
   src: url("/assets/fonts/SegoeWP.ttf");
   src: url("/assets/fonts/segoe-wp-light.ttf");  
