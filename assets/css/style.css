@@ -15,6 +15,7 @@ body {
 
 svg {
   fill: var(--color-yellow);
+  transition: 0.2s ease;
 }
 
 .grid-center-item {
@@ -28,6 +29,17 @@ svg {
   display: grid;
   grid-template-columns: minmax(auto, 140px) auto minmax(auto, 140px);
   grid-template-rows: 165px 400px auto 64px;
+}
+
+.btn {
+  background: var(--color-yellow);
+  transition: 0.2s linear;
+}
+.btn:hover {
+  background: khaki;
+}
+.btn:hover > svg {
+  fill: #9b7d08;
 }
 
 /* header */
