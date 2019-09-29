@@ -278,6 +278,9 @@ main {
  justify-content: center;
 
  grid-template-columns: repeat(3, minmax(auto, 340px));
+ 
+ z-index: 100;
+ box-shadow: 0 0 8px 8px rgba(0, 0, 0, .2);
 }
 
 .icons-bar .btn:hover {
@@ -614,9 +617,8 @@ footer {
  display: grid;
  grid-template-columns: minmax(auto, 140px) auto minmax(auto, 140px);
  grid-template-rows: 64px;
- /* justify-content: center;*/
- /* align-content: center;*/
- /* align-items: */
+
+ box-shadow: 0 -3px 4px 4px rgba(0, 0, 0, .2);
 }
 
 footer > div {
