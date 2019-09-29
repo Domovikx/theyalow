@@ -511,9 +511,6 @@ main {
  .icons-bar > div {
   border: 0;
  }
-
-
-
 }
 
 /* news */
@@ -529,11 +526,7 @@ main {
  grid-template-columns: minmax(auto, 140px) minmax(auto, 1020px) minmax(auto, 140px);
  grid-template-rows: 111px 233px 87px 80px;
 
-
-
- display: none;
-
-
+ /* display: none;*/
 
 }
 
@@ -688,6 +681,195 @@ main {
  border-radius: 15px;
 }
 
+.news-comments {
+ display: none;
+}
+
+/* news media */
+@media (max-width: 1024px) {
+ .news {
+  display: block;
+  
+ }
+
+ .news-title,
+ .news-date,
+ .news-scroll {
+  display: none;
+ }
+
+ .news-content {
+
+  display: grid;
+
+  grid-template-columns:
+   auto auto;
+  grid-template-rows: 252px 233px;
+ }
+
+ .news-description {
+  display: grid;
+
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  margin: 10px 7px 10px auto;
+  z-index: 10;
+
+  max-width: 300px;
+
+  line-height: 1.2;
+ }
+
+ .news-description p {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+ }
+
+ .news-description .svg-plus {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  margin: 190px 0 0 245px;
+ }
+
+ .news-video {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  margin: 10px auto 10px 7px;
+
+  margin: 0;
+  max-width: 315px;
+ }
+
+ .news-twitter {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+  max-width: 307px;
+  margin: 0 0 0 auto;
+
+  z-index: 10;
+ }
+
+ .news-twitter p,
+ .news-twitter .svg-plus {
+  display: none;
+ }
+
+ .svg-twitter {
+  margin: auto;
+
+ }
+
+ .news-comments {
+  box-sizing: border-box;
+
+  display: grid;
+  align-content: end;
+  justify-content: end;
+
+  justify-items: end;
+
+
+  max-width: 315px;
+  padding-right: 30px;
+
+  grid-row: 2 / span 2;
+  grid-column: 2 / span 1;
+
+  color: #8f8e8e;
+  background: #ec9e03;
+
+  font-size: 13px;
+  font-family: arial, sans-serif;
+ }
+
+ .news-comments li {
+  list-style-type: none;
+
+  background-image: url(/assets/images/Rounded%20Rectangle%202.png);
+
+  height: 42px;
+  width: 285px;
+  padding: 5px 0 0 28px;
+  margin-bottom: 14px;
+
+  box-sizing: border-box;
+ }
+
+ .news-comments li:nth-child(2),
+ .news-comments li:nth-child(3) {
+  background-image: url(/assets/images/bg-Rounded-Rectangle-06.png);
+ }
+
+ .news-comments input {
+  margin-bottom: 11px;
+  height: 31px;
+ }
+
+ .news-comments [type="submit"] {
+  padding: 0 10px;
+  background: #dc9b19;
+  border-radius: 0 10px 10px 0;
+  color: #fff;
+  width: 70px;
+    box-sizing: border-box;
+ }
+
+ .news-comments [type="text"] {
+  padding: 0 10px;
+  width: 203px;
+  box-sizing: border-box;
+  margin-right: -3px;
+  border-radius: 10px 0 0 10px;
+ }
+
+
+
+
+
+}
+
+/* /1024px */
+
+
+@media (max-width: 767px) {
+
+ .news {
+  height: auto;
+  z-index: 10;
+ }
+ 
+ .news-twitter {
+  background: #f5c507;
+ }
+
+ .news-comments {
+  background: #f5c507;
+ }
+
+ .news-bg-color {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+  background: #fff;
+ }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* benefits */
 .benefits {
  grid-row: 4 / span 1;
@@ -699,8 +881,6 @@ main {
  display: grid;
  grid-template-columns: minmax(20px, 140px) auto minmax(20px, 140px);
  grid-template-rows: 94px 402px;
-
-
 
 
  display: none;
