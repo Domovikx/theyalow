@@ -70,7 +70,6 @@ header {
  }
 }
 
-
 .header-bg-img {
  grid-row: 1 / span 2;
  grid-column: 1 / span 3;
@@ -237,16 +236,7 @@ nav svg {
  .header-nav > div:nth-child(1) {
   height: 62px;
  }
-
-
-
-
-
 }
-
-
-
-
 
 /* main */
 main {
@@ -392,10 +382,7 @@ main {
  .slider {
   height: 327px;
  }
-
-
 }
-
 
 /* icons-bar */
 .icons-bar {
@@ -413,12 +400,6 @@ main {
 
  z-index: 100;
  box-shadow: 0 0 8px 8px rgba(0, 0, 0, .2);
-
-
-
- /* display: none;*/
-
-
 
 }
 
@@ -525,9 +506,6 @@ main {
  display: grid;
  grid-template-columns: minmax(auto, 140px) minmax(auto, 1020px) minmax(auto, 140px);
  grid-template-rows: 111px 233px 87px 80px;
-
- /* display: none;*/
-
 }
 
 .news-title {
@@ -689,7 +667,7 @@ main {
 @media (max-width: 1024px) {
  .news {
   display: block;
-  
+
  }
 
  .news-title,
@@ -807,12 +785,17 @@ main {
 
  .news-comments [type="submit"] {
   padding: 0 10px;
-  background: #dc9b19;
+  background: #f5c507;
   border-radius: 0 10px 10px 0;
   color: #fff;
   width: 70px;
-    box-sizing: border-box;
+  box-sizing: border-box;
  }
+
+ .news-comments [type="submit"]:hover {
+  background: #c28401;
+ }
+
 
  .news-comments [type="text"] {
   padding: 0 10px;
@@ -821,13 +804,7 @@ main {
   margin-right: -3px;
   border-radius: 10px 0 0 10px;
  }
-
-
-
-
-
 }
-
 /* /1024px */
 
 
@@ -837,7 +814,7 @@ main {
   height: auto;
   z-index: 10;
  }
- 
+
  .news-twitter {
   background: #f5c507;
  }
@@ -852,23 +829,10 @@ main {
   background: #fff;
  }
 
-
+ .news-comments [type="submit"] {
+  background: #ec9e03;
+ }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* benefits */
 .benefits {
@@ -881,11 +845,6 @@ main {
  display: grid;
  grid-template-columns: minmax(20px, 140px) auto minmax(20px, 140px);
  grid-template-rows: 94px 402px;
-
-
- display: none;
-
-
 }
 
 .benefits-title {
@@ -972,7 +931,44 @@ main {
  }
 }
 
+@media (max-width: 1024px) {
 
+ .benefits {
+  height: 465px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 112px auto;
+  justify-content: center;
+ }
+
+ .benefits-description {
+  display: none;
+ }
+
+ .benefits-title {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+ }
+
+ .benefits-title {
+  letter-spacing: -0.3px;
+  margin: auto;
+ }
+
+ .benefits-discount,
+ .benefits-img {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+ }
+
+ .benefits-discount {
+  margin-left: 10px;
+ }
+
+ .benefits-img {
+  margin-left: 40px;
+ }
+}
 
 /* footer */
 footer {
@@ -999,7 +995,6 @@ footer {
 footer > div {
  grid-row: 1 / span 1;
  grid-column: 2 / span 1;
- /* height: 64px;*/
 
  display: flex;
  align-content: center;
@@ -1027,7 +1022,6 @@ footer .logo svg {
  footer > div {
   grid-column: 1 / span 3;
   margin-left: 65px;
-  /*  height: 43px;*/
  }
 
  footer .logo svg {
@@ -1036,14 +1030,8 @@ footer .logo svg {
  }
 }
 
-
-
-
-@media (max-width: 1199px) {}
-
-
-@media (max-width: 991px) {}
-
-@media (max-width: 767px) {}
-
-@media (max-width: 575px) {}
+@media (max-width: 767px) {
+ .footer-title {
+  font-size: 17px;
+ }
+}
