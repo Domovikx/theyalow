@@ -201,6 +201,53 @@ nav svg {
  width: 24px;
 }
 
+/* header media */
+@media (max-width: 900px) {
+ header {
+  padding: 0;
+  margin: 0;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+
+  background-image: url(/assets/images/Layer-26.png)
+ }
+
+ header .logo-1,
+ header .logo-2 {
+  height: 40px;
+  width: 40px;
+ }
+
+ header .logo {
+  margin: 12px 8px 12px 12px;
+ }
+
+ .header-title {
+  font-size: 19px;
+  margin: 0;
+ }
+
+ nav {
+  display: flex;
+  height: 62px;
+ }
+
+ .header-nav > div:nth-child(1) {
+  height: 62px;
+ }
+
+
+
+
+
+}
+
+
+
+
+
 /* main */
 main {
  grid-row: 2 / span 4;
@@ -300,10 +347,8 @@ main {
  }
 
  main .slider .slider-box-2 {
-  background: red;
   width: 100%;
  }
-
 
  .slider-box-3 {
   display: none;
