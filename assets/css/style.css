@@ -209,6 +209,10 @@ main {
  align-items: center;
 }
 
+.slider>div:nth-child(2){
+  width: 557px;
+}
+
 .slider-video {
  position: relative;
  right: 4px;
@@ -583,7 +587,7 @@ main {
  grid-row: 2 / span 1;
  grid-column: 2 / span 1;
 
- margin-left: auto;
+ margin-left: 660px;
 
  font-size: 22px;
  font-family: 'Open Sans', sans-serif;
