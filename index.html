@@ -2,254 +2,280 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
- <link rel="stylesheet" href="assets/css/style.css">
- <link rel="stylesheet" href="assets/css/fonts.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/fonts.css">
 
- <title>theyalow</title>
+	<title>theyalow</title>
 </head>
 
 <body>
 
- <svg display="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<svg display="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-  <symbol id="arrow-r" viewBox="0 0 13 19">
-   <path d="M1291.99,327.2l-2.96,2.985-0.01,0-6.29,6.333a2.1,2.1,0,0,1-2.81-.129,2.119,2.119,0,0,1-.28-2.734l6.28-6.314-6.6-6.039s-0.79-1.762.19-2.764,2.77-.22,2.77-0.22l6.6,6.042,0.02-.02Z" transform="translate(-1279 -318)" />
-  </symbol>
+		<symbol id="arrow-r" viewBox="0 0 13 19">
+			<path
+				d="M1291.99,327.2l-2.96,2.985-0.01,0-6.29,6.333a2.1,2.1,0,0,1-2.81-.129,2.119,2.119,0,0,1-.28-2.734l6.28-6.314-6.6-6.039s-0.79-1.762.19-2.764,2.77-.22,2.77-0.22l6.6,6.042,0.02-.02Z"
+				transform="translate(-1279 -318)" />
+		</symbol>
 
-  <symbol id="arrow-l" viewBox="0 0 13 19">
-   <path d="M8.013,328.2l2.961,2.984,0,0,6.3,6.333a2.088,2.088,0,0,0,2.8-.129,2.11,2.11,0,0,0,.283-2.734l-6.277-6.314,6.6-6.039s0.792-1.762-.19-2.764-2.771-.22-2.771-0.22l-6.6,6.042-0.02-.02Z" transform="translate(-8 -319)" />
-  </symbol>
+		<symbol id="arrow-l" viewBox="0 0 13 19">
+			<path
+				d="M8.013,328.2l2.961,2.984,0,0,6.3,6.333a2.088,2.088,0,0,0,2.8-.129,2.11,2.11,0,0,0,.283-2.734l-6.277-6.314,6.6-6.039s0.792-1.762-.19-2.764-2.771-.22-2.771-0.22l-6.6,6.042-0.02-.02Z"
+				transform="translate(-8 -319)" />
+		</symbol>
 
-  <symbol id="cloud" viewBox="0 0 109 74">
-   <path d="M334.75,701H276.844a23.449,23.449,0,0,1-6.727-46.024c-0.018-.359-0.086-0.7-0.086-1.067a16.86,16.86,0,0,1,22.388-15.887,27.262,27.262,0,0,1,48.408,9.886A26.851,26.851,0,0,1,334.75,701Zm-20.438-26.909V653.909H300.687v20.182H290.256L307.5,691.119l17.244-17.028H314.312Z" transform="translate(-253 -627)" />
-  </symbol>
+		<symbol id="cloud" viewBox="0 0 109 74">
+			<path
+				d="M334.75,701H276.844a23.449,23.449,0,0,1-6.727-46.024c-0.018-.359-0.086-0.7-0.086-1.067a16.86,16.86,0,0,1,22.388-15.887,27.262,27.262,0,0,1,48.408,9.886A26.851,26.851,0,0,1,334.75,701Zm-20.438-26.909V653.909H300.687v20.182H290.256L307.5,691.119l17.244-17.028H314.312Z"
+				transform="translate(-253 -627)" />
+		</symbol>
 
-  <symbol id="sheet" viewBox="0 0 91.187 95">
-   <path d="M690.64,658.57c-4.692,30.106-35.933,32.193-53.4,30.94-1.155,5.178-1.605,8.49-1.605,8.49h-8.588s11.066-41.969,36.85-64.269a62.559,62.559,0,0,1,16.114-10.71c-27.813,10.2-47.219,44.8-55.858,63.2a49.1,49.1,0,0,1-2.423-50.533C635.059,610.058,707,603,707,603S696.312,622.183,690.64,658.57Z" transform="translate(-615.813 -603)" />
-  </symbol>
+		<symbol id="sheet" viewBox="0 0 91.187 95">
+			<path
+				d="M690.64,658.57c-4.692,30.106-35.933,32.193-53.4,30.94-1.155,5.178-1.605,8.49-1.605,8.49h-8.588s11.066-41.969,36.85-64.269a62.559,62.559,0,0,1,16.114-10.71c-27.813,10.2-47.219,44.8-55.858,63.2a49.1,49.1,0,0,1-2.423-50.533C635.059,610.058,707,603,707,603S696.312,622.183,690.64,658.57Z"
+				transform="translate(-615.813 -603)" />
+		</symbol>
 
-  <symbol id="airplane" viewBox="0 0 81 83">
-   <path d="M998.231,670.806v24.145l-10.538-13.674L965.831,703,939,620l81,29.176Zm-51.637-42.925,46.068,48.458,5.4-5.365Z" transform="translate(-939 -620)" />
-  </symbol>
+		<symbol id="airplane" viewBox="0 0 81 83">
+			<path
+				d="M998.231,670.806v24.145l-10.538-13.674L965.831,703,939,620l81,29.176Zm-51.637-42.925,46.068,48.458,5.4-5.365Z"
+				transform="translate(-939 -620)" />
+		</symbol>
 
-  <symbol id="person" viewBox="0 0 21 19">
-   <path d="M746,101l3.545-5.182h13.964L767,101H746Zm10.527-6.046c-2.892,0-5.236-3.184-5.236-6.046V87.182a5.237,5.237,0,0,1,10.473,0v1.727C761.764,91.771,759.419,94.954,756.527,94.954Z" transform="translate(-746 -82)" />
-  </symbol>
+		<symbol id="person" viewBox="0 0 21 19">
+			<path
+				d="M746,101l3.545-5.182h13.964L767,101H746Zm10.527-6.046c-2.892,0-5.236-3.184-5.236-6.046V87.182a5.237,5.237,0,0,1,10.473,0v1.727C761.764,91.771,759.419,94.954,756.527,94.954Z"
+				transform="translate(-746 -82)" />
+		</symbol>
 
-  <symbol id="key" viewBox="0 0 19 19">
-   <path d="M907.958,83.578a2.444,2.444,0,1,0,3.46,3.453l1.4-1.4A4.817,4.817,0,0,1,913,86.883a4.831,4.831,0,0,1-6.16,4.7c-0.014.014-.018,0.034-0.032,0.048l-8.65,8.632a2.444,2.444,0,0,1-3.46-3.453l8.65-8.633c0.015-.015.035-0.019,0.05-0.033a4.829,4.829,0,0,1,5.96-5.961ZM896.485,97.871a0.61,0.61,0,1,0,.612.61A0.611,0.611,0,0,0,896.485,97.871Z" transform="translate(-894 -82)" />
-  </symbol>
+		<symbol id="key" viewBox="0 0 19 19">
+			<path
+				d="M907.958,83.578a2.444,2.444,0,1,0,3.46,3.453l1.4-1.4A4.817,4.817,0,0,1,913,86.883a4.831,4.831,0,0,1-6.16,4.7c-0.014.014-.018,0.034-0.032,0.048l-8.65,8.632a2.444,2.444,0,0,1-3.46-3.453l8.65-8.633c0.015-.015.035-0.019,0.05-0.033a4.829,4.829,0,0,1,5.96-5.961ZM896.485,97.871a0.61,0.61,0,1,0,.612.61A0.611,0.611,0,0,0,896.485,97.871Z"
+				transform="translate(-894 -82)" />
+		</symbol>
 
-  <symbol id="letter" viewBox="0 0 24 18">
-   <path d="M1053.74,99.3l-8.28-8.276,6.12-6.125,2.18-2.17a1.466,1.466,0,0,1,.24.772v15A1.476,1.476,0,0,1,1053.74,99.3Zm-2.69-14.932-2.79,2.794-5.35,5.346-0.93.939-9.03-9.031-1.5-1.5-0.69-.689A1.427,1.427,0,0,1,1031.5,82h21a1.5,1.5,0,0,1,.72.207l-0.76.755Zm-20.14-.923L1038.47,91l-8.24,8.244A1.468,1.468,0,0,1,1030,98.5v-15a1.467,1.467,0,0,1,.23-0.744l0.68,0.689h0ZM1039,91.53l0.32,0.317,0.11,0.113,1.03,1.031,1.5,1.5,0.06-.063,0.02,0.016,1.41-1.406,1.48-1.484,8.26,8.258a1.482,1.482,0,0,1-.69.188h-21a1.428,1.428,0,0,1-.74-0.226Z" transform="translate(-1030 -82)" />
-  </symbol>
+		<symbol id="letter" viewBox="0 0 24 18">
+			<path
+				d="M1053.74,99.3l-8.28-8.276,6.12-6.125,2.18-2.17a1.466,1.466,0,0,1,.24.772v15A1.476,1.476,0,0,1,1053.74,99.3Zm-2.69-14.932-2.79,2.794-5.35,5.346-0.93.939-9.03-9.031-1.5-1.5-0.69-.689A1.427,1.427,0,0,1,1031.5,82h21a1.5,1.5,0,0,1,.72.207l-0.76.755Zm-20.14-.923L1038.47,91l-8.24,8.244A1.468,1.468,0,0,1,1030,98.5v-15a1.467,1.467,0,0,1,.23-0.744l0.68,0.689h0ZM1039,91.53l0.32,0.317,0.11,0.113,1.03,1.031,1.5,1.5,0.06-.063,0.02,0.016,1.41-1.406,1.48-1.484,8.26,8.258a1.482,1.482,0,0,1-.69.188h-21a1.428,1.428,0,0,1-.74-0.226Z"
+				transform="translate(-1030 -82)" />
+		</symbol>
 
-  <symbol id="logo-1" viewBox="0 0 83 83">
-   <path d="M139.992,83l13.08-13.5L139.992,56h11.1l13.082,13.5L151.087,83H139.992Zm16.839,0,13.081-13.5L156.831,56h11.1l13.081,13.5L167.927,83h-11.1Zm66.177,0-13.08-13.5L223.008,56H211.913L198.831,69.5,211.913,83h11.1Zm-16.839,0L193.088,69.5,206.169,56h-11.1L181.992,69.5,195.073,83h11.1ZM168,27.992l13.5,13.08L195,27.992v11.1L181.5,52.169,168,39.087v-11.1Zm0,16.839,13.5,13.08L195,44.831v11.1L181.5,69.008,168,55.927v-11.1Zm0,66.177,13.5-13.08L195,111.008v-11.1L181.5,86.831,168,99.913v11.1Zm0-16.839,13.5-13.08L195,94.169v-11.1L181.5,69.992,168,83.073v11.1Z" transform="translate(-140 -28)" />
-  </symbol>
+		<symbol id="logo-1" viewBox="0 0 83 83">
+			<path
+				d="M139.992,83l13.08-13.5L139.992,56h11.1l13.082,13.5L151.087,83H139.992Zm16.839,0,13.081-13.5L156.831,56h11.1l13.081,13.5L167.927,83h-11.1Zm66.177,0-13.08-13.5L223.008,56H211.913L198.831,69.5,211.913,83h11.1Zm-16.839,0L193.088,69.5,206.169,56h-11.1L181.992,69.5,195.073,83h11.1ZM168,27.992l13.5,13.08L195,27.992v11.1L181.5,52.169,168,39.087v-11.1Zm0,16.839,13.5,13.08L195,44.831v11.1L181.5,69.008,168,55.927v-11.1Zm0,66.177,13.5-13.08L195,111.008v-11.1L181.5,86.831,168,99.913v11.1Zm0-16.839,13.5-13.08L195,94.169v-11.1L181.5,69.992,168,83.073v11.1Z"
+				transform="translate(-140 -28)" />
+		</symbol>
 
-  <symbol id="logo-2" viewBox="0 0 83 83">
-   <path d="M142.174,50.287l18.78-.713-0.125-18.794,8.019,7.668,0.126,18.795-18.781.712Zm12.17,11.638,18.78-.713L173,42.418l8.019,7.668,0.126,18.795-18.781.712Zm47.827,45.737-0.126-18.794,18.781-.714-8.019-7.668-18.782.713,0.127,18.794ZM190,96.024L189.875,77.23l18.781-.714-8.019-7.669-18.782.713,0.127,18.794Zm10.433-66.129,0.713,18.78,18.794-.126-7.668,8.019-18.795.126-0.712-18.781ZM188.8,42.065l0.713,18.781L208.3,60.72l-7.668,8.019-18.795.126-0.713-18.781ZM143.059,89.892l18.793-.126,0.714,18.781,7.668-8.019-0.713-18.782-18.794.127ZM154.7,77.722L173.49,77.6,174.2,96.377l7.669-8.019-0.714-18.782-18.794.127Z" transform="translate(-140 -27.719)" />
-  </symbol>
+		<symbol id="logo-2" viewBox="0 0 83 83">
+			<path
+				d="M142.174,50.287l18.78-.713-0.125-18.794,8.019,7.668,0.126,18.795-18.781.712Zm12.17,11.638,18.78-.713L173,42.418l8.019,7.668,0.126,18.795-18.781.712Zm47.827,45.737-0.126-18.794,18.781-.714-8.019-7.668-18.782.713,0.127,18.794ZM190,96.024L189.875,77.23l18.781-.714-8.019-7.669-18.782.713,0.127,18.794Zm10.433-66.129,0.713,18.78,18.794-.126-7.668,8.019-18.795.126-0.712-18.781ZM188.8,42.065l0.713,18.781L208.3,60.72l-7.668,8.019-18.795.126-0.713-18.781ZM143.059,89.892l18.793-.126,0.714,18.781,7.668-8.019-0.713-18.782-18.794.127ZM154.7,77.722L173.49,77.6,174.2,96.377l7.669-8.019-0.714-18.782-18.794.127Z"
+				transform="translate(-140 -27.719)" />
+		</symbol>
 
-  <symbol id="plus" viewBox="0 0 11 11">
-   <path d="M1149,1104h-4v4h-3v-4h-4v-3h4v-4h3v4h4v3Z" transform="translate(-1138 -1097)" />
-  </symbol>
+		<symbol id="plus" viewBox="0 0 11 11">
+			<path d="M1149,1104h-4v4h-3v-4h-4v-3h4v-4h3v4h4v3Z" transform="translate(-1138 -1097)" />
+		</symbol>
 
-  <symbol id="twitter" viewBox="0 0 163 133">
-   <path id="twitter" d="M1075,962.313l-15.28,15.313v2.552a33.052,33.052,0,0,1-1.1,8.069c-0.36,21.063-7.06,49-34.56,71.053-54.1,43.37-112.061,5.1-112.061,5.1,45.844,0,45.844-15.31,45.844-15.31-10.188,0-30.563-20.42-30.563-20.42,5.094,5.1,15.282,0,15.282,0-25.47-15.31-25.47-30.626-25.47-30.626,5.094,5.106,15.282,0,15.282,0-25.469-20.418-10.188-45.941-10.188-45.941,5.094,25.523,71.313,35.732,71.313,35.732l0.842-.423a60.7,60.7,0,0,1-.842-9.786C993.5,959.3,1008.32,947,1026.61,947a32.857,32.857,0,0,1,25.04,11.7l2.97-1.49L1069.91,947l-10.19,20.418Z" transform="translate(-912 -947)" />
-  </symbol>
+		<symbol id="twitter" viewBox="0 0 163 133">
+			<path
+				d="M1075,962.313l-15.28,15.313v2.552a33.052,33.052,0,0,1-1.1,8.069c-0.36,21.063-7.06,49-34.56,71.053-54.1,43.37-112.061,5.1-112.061,5.1,45.844,0,45.844-15.31,45.844-15.31-10.188,0-30.563-20.42-30.563-20.42,5.094,5.1,15.282,0,15.282,0-25.47-15.31-25.47-30.626-25.47-30.626,5.094,5.106,15.282,0,15.282,0-25.469-20.418-10.188-45.941-10.188-45.941,5.094,25.523,71.313,35.732,71.313,35.732l0.842-.423a60.7,60.7,0,0,1-.842-9.786C993.5,959.3,1008.32,947,1026.61,947a32.857,32.857,0,0,1,25.04,11.7l2.97-1.49L1069.91,947l-10.19,20.418Z"
+				transform="translate(-912 -947)" />
+		</symbol>
 
- </svg>
+	</svg>
 
- <div class="grid-container">
-  <header>
-   <div class="logo">
-    <svg class="logo-1">
-     <use xlink:href="#logo-1"></use>
-    </svg>
-    <svg class="logo-2">
-     <use xlink:href="#logo-2"></use>
-    </svg>
-   </div>
-   <h1 class="header-title">TheYalow</h1>
-   <nav class="header-nav">
-    <div>
-     <a href="#" class="btn btn-person">
-      <svg class="svg-person">
-       <use xlink:href="#person"></use>
-      </svg>
-      <span>About Us</span>
-     </a>
-     <a href="#" class="btn btn-key">
-      <svg class="svg-key">
-       <use xlink:href="#key"></use>
-      </svg>
-      <span>Services</span>
-     </a>
-     <a href="#" class="btn btn-letter">
-      <svg class="svg-letter">
-       <use xlink:href="#letter"></use>
-      </svg>
-      <span>Contact</span>
-     </a>
-    </div>
-    <div></div>
-    <div></div>
-   </nav>
-  </header>
-  <div class="header-bg-img"></div>
-  <main>
+	<div class="grid-container">
+		<header>
+			<div class="logo">
+				<svg class="logo-1">
+					<use xlink:href="#logo-1"></use>
+				</svg>
+				<svg class="logo-2">
+					<use xlink:href="#logo-2"></use>
+				</svg>
+			</div>
+			<h1 class="header-title">TheYalow</h1>
+			<nav class="header-nav">
+				<div>
+					<a href="#" class="btn btn-person">
+						<svg class="svg-person">
+							<use xlink:href="#person"></use>
+						</svg>
+						<span>About Us</span>
+					</a>
+					<a href="#" class="btn btn-key">
+						<svg class="svg-key">
+							<use xlink:href="#key"></use>
+						</svg>
+						<span>Services</span>
+					</a>
+					<a href="#" class="btn btn-letter">
+						<svg class="svg-letter">
+							<use xlink:href="#letter"></use>
+						</svg>
+						<span>Contact</span>
+					</a>
+				</div>
+				<div></div>
+				<div></div>
+			</nav>
+		</header>
+		<div class="header-bg-img"></div>
+		<main>
+			
+			<!-- slider -->
+			<section class="slider">
+				<div class="slider-box-1">
+					<a href="#" class="btn btn-slider-left">
+						<svg class="arrow-l">
+							<use xlink:href="#arrow-l"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="slider-box-2">
+					<video class="slider-video" poster="assets/images/player.png"></video>
+					<video class="slider-video-sm" poster="assets/images/player-m.png"></video>
+				</div>
+				<div class="slider-description slider-box-3">
+					<p>The cool</p>
+					<p>The minimal</p>
+				</div>
+				<div class="slider-box-4">
+					<a href="#" class="btn btn-slider-right">
+						<svg class="arrow-r">
+							<use xlink:href="#arrow-r"></use>
+						</svg>
+					</a>
+				</div>
+			</section>
 
-   <!-- slider -->
-   <section class="slider">
-    <div class="slider-box-1">
-     <a href="#" class="btn btn-slider-left">
-      <svg class="arrow-l">
-       <use xlink:href="#arrow-l"></use>
-      </svg>
-     </a>
-    </div>
-    <div class="slider-box-2">
-     <video src="" class="slider-video" poster="assets/images/player.png"></video>
-     <video src="" class="slider-video-sm" poster="assets/images/player-m.png"></video>
-    </div>
-    <div class="slider-description slider-box-3">
-     <p>The cool</p>
-     <p>The minimal</p>
-    </div>
-    <div class="slider-box-4">
-     <a href="#" class="btn btn-slider-right">
-      <svg class="arrow-r">
-       <use xlink:href="#arrow-r"></use>
-      </svg>
-     </a>
-    </div>
-   </section>
+			<!-- icons-bar -->
+			<section class="icons-bar">
+				<div>
+					<a href="#" class="btn btn-cloud">
+						<svg class="svg-cloud">
+							<use xlink:href="#cloud"></use>
+						</svg>
+						<p>better design</p>
+					</a>
+				</div>
+				<div>
+					<a href="#" class="btn btn-sheet">
+						<svg class="svg-sheet">
+							<use xlink:href="#sheet"></use>
+						</svg>
+						<p>customise</p>
+					</a>
+				</div>
+				<div>
+					<a href="#" class="btn btn-airplane">
+						<svg class="svg-airplane">
+							<use xlink:href="#airplane"></use>
+						</svg>
+						<p>Its Free</p>
+					</a>
+				</div>
+			</section>
 
-   <!-- icons-bar -->
-   <section class="icons-bar">
-    <div>
-     <a href="#" class="btn btn-cloud">
-      <svg class="svg-cloud">
-       <use xlink:href="#cloud"></use>
-      </svg>
-      <p>better design</p>
-     </a>
-    </div>
-    <div>
-     <a href="#" class="btn btn-sheet">
-      <svg class="svg-sheet">
-       <use xlink:href="#sheet"></use>
-      </svg>
-      <p>customise</p>
-     </a>
-    </div>
-    <div>
-     <a href="#" class="btn btn-airplane">
-      <svg class="svg-airplane">
-       <use xlink:href="#airplane"></use>
-      </svg>
-      <p>Its Free</p>
-     </a>
-    </div>
-   </section>
+			<!-- news -->
+			<section class="news">
+				<h2 class="news-title">Lorem ipsum dolor sit amet</h2>
+				<div class="news-content">
+					<div class="news-description">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+							ut
+						</p>
+						<svg class="svg-plus">
+							<use xlink:href="#plus"></use>
+						</svg>
+					</div>
+					<video class="news-video" poster="assets/images/Layer-25.jpg"></video>
+					<div class="news-twitter">
+						<p>22</p>
+						<svg class="svg-twitter">
+							<use xlink:href="#twitter"></use>
+						</svg>
+						<svg class="svg-plus">
+							<use xlink:href="#plus"></use>
+						</svg>
+					</div>
+					<div class="news-bg-color"></div>
+					<div class="news-comments">
+						<ul>
+							<li>
+								Daily Mobile UI Design Inspiration #1
+								via @cssauthor
+							</li>
+							<li>
+								Daily Mobile UI Design Inspiration #1
+								via @cssauthor
+							</li>
+							<li>
+								Daily Mobile UI Design Inspiration #1
+								via @cssauthor
+							</li>
+						</ul>
+						<form>
+							<input type="text">
+							<input type="submit" class="btn" value="Tweet">
+						</form>
+					</div>
+				</div>
+				<div class="news-date">
+					<p>25</p>
+					<p>APRIL</p>
+				</div>
+				<div class="news-scroll">
+					<div>
+						<div></div>
+					</div>
+				</div>
+			</section>
 
-   <!-- news -->
-   <section class="news">
-    <h2 class="news-title">Lorem ipsum dolor sit amet</h2>
-    <div class="news-content">
-     <div class="news-description">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-      </p>
-      <svg class="svg-plus">
-       <use xlink:href="#plus"></use>
-      </svg>
-     </div>
-     <video class="news-video" src="" poster="assets/images/Layer-25.jpg"></video>
-     <div class="news-twitter">
-      <p>22</p>
-      <svg class="svg-twitter">
-       <use xlink:href="#twitter"></use>
-      </svg>
-      <svg class="svg-plus">
-       <use xlink:href="#plus"></use>
-      </svg>
-     </div>
-     <div class="news-bg-color"></div>
-     <div class="news-comments">
-      <ul>
-       <li>
-        Daily Mobile UI Design Inspiration #1
-        via @cssauthor
-       </li>
-       <li>
-        Daily Mobile UI Design Inspiration #1
-        via @cssauthor
-       </li>
-       <li>
-        Daily Mobile UI Design Inspiration #1
-        via @cssauthor
-       </li>
-      </ul>
-      <form>
-       <input type="text" name="" id="">
-       <input type="submit" class="btn" value="Tweet">
-      </form>
-     </div>
-    </div>
-    <div class="news-date">
-     <p>25</p>
-     <p>APRIL</p>
-    </div>
-    <div class="news-scroll">
-     <div>
-      <div></div>
-     </div>
-    </div>
-   </section>
+			<!-- benefits -->
+			<section class="benefits">
+				<h2 class="benefits-title">Lorem ipsum dolor sit amet</h2>
+				<div class="benefits-discount">
+					<p>Its 100% Free</p>
+				</div>
 
-   <!-- benefits -->
-   <section class="benefits">
-    <h2 class="benefits-title">Lorem ipsum dolor sit amet</h2>
-    <div class="benefits-discount">
-     <p>Its 100% Free</p>
-    </div>
+				<img class="benefits-img" src="assets/images/g-1.png" alt="">
+				<div class="benefits-description">
+					<ul>
+						<li>Sed ut perspiciatis unde omnis</li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
+						<li>Sed ut perspiciatis unde omnis</li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
+					</ul>
+				</div>
 
-    <img class="benefits-img" src="assets/images/g-1.png" alt="">
-    <div class="benefits-description">
-     <ul>
-      <li>Sed ut perspiciatis unde omnis</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
-      <li>Sed ut perspiciatis unde omnis</li>
-      <li>Lorem ipsum dolor sit amet, consectetur adipisicing </li>
-     </ul>
-    </div>
+			</section>
+		</main>
 
-   </section>
-  </main>
+		<!-- footer -->
+		<footer>
+			<div>
 
-  <!-- footer -->
-  <footer>
-   <div>
+				<div class="logo">
+					<svg class="logo-1">
+						<use xlink:href="#logo-1"></use>
+					</svg>
+					<svg class="logo-2">
+						<use xlink:href="#logo-2"></use>
+					</svg>
+				</div>
 
-    <div class="logo">
-     <svg class="logo-1">
-      <use xlink:href="#logo-1"></use>
-     </svg>
-     <svg class="logo-2">
-      <use xlink:href="#logo-2"></use>
-     </svg>
-    </div>
+				<p class="footer-title">TheYalow</p>
 
-    <p class="footer-title">TheYalow</p>
+			</div>
+		</footer>
 
-   </div>
-  </footer>
+	</div>
+</body>
 
- </div>
-</body></html>
+</html>

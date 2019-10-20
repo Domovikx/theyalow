@@ -34,7 +34,6 @@ svg {
 
 @media (max-width: 1199px) {
  .grid-container {
-  /*   grid-template-rows: 43px;*/
   grid-template-rows: 165px 400px auto auto;
  }
 }
@@ -889,6 +888,7 @@ main {
  color: #fff;
 
  z-index: 100;
+ text-align: center;
 }
 
 .benefits-img {
